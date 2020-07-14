@@ -1,3 +1,8 @@
+@media screen and (max-width: 1650px) {
+  .header-img {
+    transform: none;
+    top: 210px; } }
+
 @media screen and (max-width: 1360px) {
   .header {
     grid-template-rows: 1.5fr 0.5fr 7fr;
@@ -22,31 +27,24 @@
     .header-title {
       width: 500px;
       font-size: 56px; }
-    .header-img {
-      transform: none; }
     .header-subtitle {
       width: 320px; }
+    .header-img {
+      transform: scale(-1, 1);
+      top: 360px;
+      right: -25px;
+      width: 700px; }
     .header-buttons {
       display: grid;
       grid-row-gap: 70px;
       max-width: 450px; }
       .header-buttons .link {
-        justify-self: center; }
-    .header .thumbs {
-      display: grid;
-      grid-template-columns: repeat(3, auto);
-      grid-row-gap: 15px;
-      grid-column-gap: 50px; } }
-
-@media screen and (max-width: 1650px) {
-  .header-img {
-    transform: none;
-    top: 200px; } }
+        justify-self: center; } }
 
 @media screen and (max-width: 992px) {
   .header {
     grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 1.2fr 0.5fr 0.7fr 10fr; }
+    grid-template-rows: 1.5fr 0.7fr 1fr 12fr; }
     .header-name {
       grid-row: 1;
       width: 500px;
@@ -84,19 +82,27 @@
       grid-row-gap: 80px; }
     .header-img {
       position: absolute;
-      top: 200px;
-      right: -180px;
-      width: 800px;
-      transform: none; }
+      top: 415px;
+      right: -100px;
+      width: 600px;
+      transform: scale(-1, 1); }
     .header-buttons {
       display: grid;
-      grid-row-gap: 70px;
+      grid-row-gap: 50px;
       max-width: 450px; }
       .header-buttons .link {
         justify-self: center; } }
 
 @media screen and (max-width: 768px) {
   .header-nav {
-    grid-template-columns: repeat(3, auto); }
-  .header-subtitle {
-    color: #ff591f; } }
+    grid-template-columns: repeat(2, auto); } }
+
+@media screen and (max-width: 567px) {
+  .header {
+    grid-template-columns: auto;
+    grid-auto-rows: 1.2fr 0.5fr 0.7fr 6fr; }
+    .header-nav {
+      grid-template-columns: auto auto;
+      grid-gap: 10px; }
+    .header-img {
+      width: 600px; } }
