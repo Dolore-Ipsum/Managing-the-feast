@@ -1,0 +1,198 @@
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  font-Family: sans-serif;
+  margin: 0; }
+
+.link {
+  color: #ff591f;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px; }
+
+.button {
+  display: inline-block;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #ff591f;
+  padding: 24px 53px;
+  border-radius: 100px;
+  text-transform: uppercase;
+  font-weight: 700;
+  box-shadow: 0 10px 40px rgba(255, 89, 31, 0.35), 0 9px 46px rgba(255, 89, 31, 0.56); }
+
+.arrow {
+  width: 50px;
+  border: 0;
+  background-color: #fff9e6;
+  opacity: 0.5; }
+
+.arrow_left {
+  position: relative;
+  top: -3px;
+  transform: rotate(180deg);
+  margin-right: 10px; }
+
+.circle {
+  border-radius: 50%;
+  background-color: #ffcd33;
+  position: absolute; }
+  .circle_small {
+    left: -50px;
+    top: -30px;
+    width: 250px;
+    height: 250px;
+    z-index: 0; }
+  .circle_big {
+    right: 200px;
+    top: -80px;
+    width: 800px;
+    height: 800px;
+    z-index: 0; }
+
+.header {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 2fr 6fr 3fr;
+  grid-template-rows: 2fr 10fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 15px;
+  min-height: 1150px;
+  align-items: center;
+  background-color: #fff9e6;
+  font-size: 18px; }
+  .header-logo, .header-nav, .header-contacts, .header-text {
+    position: relative; }
+  .header-name {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 70px;
+    font-family: Geneva;
+    z-index: 3;
+    line-height: 50px; }
+  .header-logo {
+    grid-area: header-logo;
+    justify-self: center;
+    position: absolute;
+    left: 16px;
+    top: -27px;
+    z-index: 2;
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .header-nav {
+    grid-area: header-nav;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    justify-content: start;
+    grid-column-gap: 30px;
+    grid-column: 2/3;
+    grid-row: 1/2; }
+    .header-nav_link {
+      text-decoration: none;
+      color: #000;
+      font-weight: 700;
+      font-size: 18px; }
+  .header-img {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 800px;
+    transform: scale(-1, 1); }
+  .header-contacts {
+    grid-area: header-contacts;
+    justify-self: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-column: 3/4;
+    grid-row: 1/2; }
+    .header-contacts_link {
+      margin-right: 38px;
+      text-decoration: none;
+      color: #000;
+      text-transform: uppercase; }
+    .header-contacts-phone {
+      font-size: 20px;
+      font-weight: 900; }
+    .header-contacts-callback {
+      display: inline-block;
+      font-size: 14px;
+      margin: 0; }
+      .header-contacts-callback:after {
+        content: '';
+        width: 100%;
+        display: block;
+        height: 1px;
+        background-color: #000; }
+  .header-text {
+    grid-area: header-text;
+    justify-self: start;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    max-width: 650px;
+    grid-row-gap: 90px; }
+  .header-title {
+    font-size: 62px;
+    margin: 0; }
+  .header-subtitle {
+    font-size: 22px;
+    line-height: 34px; }
+  .header-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 450px; }
+    .header-buttons .link:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #ff591f;
+      opacity: 0.5; }
+
+.thumbs {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  justify-content: start;
+  grid-column-gap: 20px; }
+  .thumbs_link {
+    text-decoration: none;
+    font-size: 15px;
+    color: #000;
+    width: auto;
+    font-weight: 700; }
+
+@media screen and (max-width: 1360px) {
+  .header {
+    grid-template-rows: 2fr 1fr 7fr;
+    grid-template-columns: 1fr 5fr 2fr; }
+    .header-nav {
+      grid-row: 2/3;
+      grid-column: 2/4; }
+    .header-name {
+      grid-column: 2/3;
+      justify-self: start; }
+    .header-logo {
+      grid-column: 2/3;
+      justify-self: start; }
+    .header-text {
+      grid-row: 3/4; }
+    .header-contacts {
+      grid-column: 2/3;
+      justify-self: end; } }
+
+@media screen and (max-width: 992px) {
+  .header {
+    grid-template-columns: 1fr 8fr 1fr; }
+    .header-contacts {
+      grid-row: 2/3; }
+    .header-nav {
+      grid-row: 3/4; } }

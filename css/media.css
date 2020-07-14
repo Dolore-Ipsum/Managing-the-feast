@@ -1,0 +1,26 @@
+@media screen and (max-width: 1360px) {
+  .header {
+    grid-template-rows: 2fr 1fr 7fr;
+    grid-template-columns: 1fr 5fr 2fr; }
+    .header-nav {
+      grid-row: 2/3;
+      grid-column: 2/4; }
+    .header-name {
+      grid-column: 2/3;
+      justify-self: start; }
+    .header-logo {
+      grid-column: 2/3;
+      justify-self: start; }
+    .header-text {
+      grid-row: 3/4; }
+    .header-contacts {
+      grid-column: 2/3;
+      justify-self: end; } }
+
+@media screen and (max-width: 992px) {
+  .header {
+    grid-template-columns: 1fr 8fr 1fr; }
+    .header-contacts {
+      grid-row: 2/3; }
+    .header-nav {
+      grid-row: 3/4; } }

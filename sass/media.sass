@@ -1,0 +1,25 @@
+@media screen and (max-width:1360px)
+    .header
+        grid-template-rows: 2fr 1fr 7fr
+        grid-template-columns: 1fr 5fr 2fr
+        &-nav
+            grid-row: 2/3
+            grid-column: 2/4
+        &-name
+            grid-column: 2/3
+            justify-self: start    
+        &-logo
+            grid-column: 2/3
+            justify-self: start
+        &-text
+            grid-row: 3/4
+        &-contacts
+            grid-column: 2/3
+            justify-self: end
+@media screen and (max-width: 992px)
+    .header
+        grid-template-columns: 1fr 8fr 1fr
+        &-contacts
+            grid-row: 2/3    
+        &-nav
+            grid-row: 3/4
