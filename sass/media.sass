@@ -1,25 +1,112 @@
+$header-bg: #fff9e6
+$button-bg: #ff591f
 @media screen and (max-width:1360px)
     .header
-        grid-template-rows: 2fr 1fr 7fr
-        grid-template-columns: 1fr 5fr 2fr
+        grid-template-rows: 1.5fr 0.5fr 7fr
+        grid-template-columns: 1fr 6fr 2fr
         &-nav
             grid-row: 2/3
             grid-column: 2/4
         &-name
             grid-column: 2/3
-            justify-self: start    
+            justify-self: start
+            left: -3px    
         &-logo
             grid-column: 2/3
             justify-self: start
+            left: 13px
         &-text
             grid-row: 3/4
+            grid-row-gap: 65px
         &-contacts
             grid-column: 2/3
             justify-self: end
+        &-title
+            width: 500px
+            font-size: 56px
+        &-img
+            transform: none
+        &-subtitle
+            width: 320px
+        &-buttons
+            display: grid 
+            grid-row-gap: 70px          
+            max-width: 450px
+            .link
+                justify-self: center
+        .thumbs
+            display: grid
+            grid-template-columns: repeat(3, auto)
+            grid-row-gap: 15px
+            grid-column-gap: 50px
+            
+
+@media screen and (max-width: 1650px)
+    .header-img
+        transform: none 
+        top: 200px    
+
 @media screen and (max-width: 992px)
     .header
         grid-template-columns: 1fr 8fr 1fr
+        grid-template-rows: 1.2fr 0.5fr 0.7fr 10fr
+
+        &-name
+            grid-row: 1
+            width: 500px
+            top: -20px
+            left: -3px
+            &:before 
+                content: "" 
+                position: absolute
+                top: 50%
+                left: 40%
+                transform: translate(-50%,-50%)
+                width: 90%
+                height: 180%
+                border-radius: 50%/30%
+                border: 6px solid #5C2610
+                border-left-color: transparent
+                border-right-color: transparent
+        &-logo
+            visibility: hidden
+        &-title
+            font-size: 48px
+        &-subtitle
+            width: 320px
+
         &-contacts
-            grid-row: 2/3    
+            grid-row: 2/3
+            justify-self: start
+            align-self: start
         &-nav
             grid-row: 3/4
+            grid-template-columns: repeat(3, auto)
+            grid-row-gap: 15px
+            grid-column-gap: 85px
+        &-text
+            grid-row: 4/5
+            grid-row-gap: 80px
+        &-img
+            position: absolute
+            top: 200px
+            right: -180px
+            width: 800px
+            transform: none
+        &-buttons
+            display: grid 
+            grid-row-gap: 70px          
+            max-width: 450px
+            .link
+                justify-self: center
+        
+               
+@media screen and ( max-width: 768px)
+    .header
+        &-nav
+            grid-template-columns: repeat(3, auto)
+        &-subtitle
+            color: $button-bg
+           
+
+                
