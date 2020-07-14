@@ -30,7 +30,7 @@ body {
   background-color: #fff9e6;
   opacity: 0.5; }
 
-.arrow_left {
+.arrow__left {
   position: relative;
   top: -3px;
   transform: rotate(180deg);
@@ -40,13 +40,13 @@ body {
   border-radius: 50%;
   background-color: #ffcd33;
   position: absolute; }
-  .circle_small {
+  .circle__small {
     left: -50px;
     top: -30px;
     width: 250px;
     height: 250px;
     z-index: 0; }
-  .circle_big {
+  .circle__big {
     right: 200px;
     top: -80px;
     width: 800px;
@@ -95,7 +95,7 @@ body {
     grid-column-gap: 30px;
     grid-column: 2/3;
     grid-row: 1/2; }
-    .header-nav_link {
+    .header-nav__link {
       text-decoration: none;
       color: #000;
       font-weight: 700;
@@ -115,7 +115,7 @@ body {
     align-items: center;
     grid-column: 3/4;
     grid-row: 1/2; }
-    .header-contacts_link {
+    .header-contacts__link {
       margin-right: 38px;
       text-decoration: none;
       color: #000;
@@ -168,7 +168,7 @@ body {
   grid-row-gap: 20px;
   grid-column: 1/2;
   grid-row: 5/6; }
-  .thumbs_link {
+  .thumbs__link {
     white-space: nowrap;
     text-decoration: none;
     font-size: 18px;
