@@ -63,6 +63,7 @@ body
     overflow: hidden
     display: grid
     grid-template-columns: 2fr 6fr 3fr
+    
 
 .header
     //grid-template-areas: "header-logo header-nav header-contacts" ". header-text ." 
@@ -203,9 +204,9 @@ body
         grid-row: 2/3
 .about
     &-row
+        display: grid
         grid-column: 2/3
         grid-row: 3/4
-        display: grid
         grid-template-columns: repeat(4, auto)
     &-col
         display: grid

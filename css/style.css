@@ -187,9 +187,9 @@ body {
     grid-row: 2/3; }
 
 .about-row {
+  display: grid;
   grid-column: 2/3;
   grid-row: 3/4;
-  display: grid;
   grid-template-columns: repeat(4, auto); }
 
 .about-col {
