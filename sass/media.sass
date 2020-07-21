@@ -5,9 +5,10 @@ $button-bg: #ff591f
         transform: none 
         top: 210px 
 @media screen and (max-width:1360px)
-    .header
+    .container
         grid-template-rows: 1.5fr 0.5fr 7fr
         grid-template-columns: 1fr 6fr 2fr
+    .header    
         &-nav
             grid-row: 2/3
             grid-column: 2/4
@@ -45,10 +46,10 @@ $button-bg: #ff591f
    
 
 @media screen and (max-width: 992px)
-    .header
+    .container
         grid-template-columns: 1fr 8fr 1fr
         grid-template-rows: 1.5fr 0.7fr 1fr 12fr
-
+    .header
         &-name
             grid-row: 1
             width: 500px
@@ -104,9 +105,10 @@ $button-bg: #ff591f
             grid-template-columns: repeat(2, auto)
         
 @media screen and ( max-width: 567px)  
-    .header
+    .container
         grid-template-columns: auto
         grid-auto-rows: 1.2fr 0.5fr 0.7fr 6fr 
+    .header
         &-nav
             grid-template-columns: auto auto  
             grid-gap: 10px 

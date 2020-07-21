@@ -58,11 +58,13 @@ body
         height: 800px
         z-index: 0
 
-.header
+.container
     position: relative
     overflow: hidden
     display: grid
     grid-template-columns: 2fr 6fr 3fr
+
+.header
     //grid-template-areas: "header-logo header-nav header-contacts" ". header-text ." 
     grid-template-rows: 2fr 10fr
     grid-column-gap: 15px 
@@ -190,7 +192,32 @@ body
         font-size: 18px
         color: $text-color
         font-weight: 700
-                
-@import media    
+
+.section
+    padding: 5% 0
+    &-title
+        grid-column: 2/3
+        grid-row: 1/2
+    &-description
+        grid-column: 2/3
+        grid-row: 2/3
+.about
+    &-row
+        grid-column: 2/3
+        grid-row: 3/4
+        display: grid
+        grid-template-columns: repeat(4, auto)
+    &-col
+        display: grid
+        grid-template-rows: 350px
+        grid-auto-rows: auto
+        align-items: end   
+        justify-items: center 
+    &__title
+        color: #ff591f 
+        font-size: 90px
+        margin: 0  
+        margin-top: -40px    
+@import media   
         
       
