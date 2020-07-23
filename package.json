@@ -11,9 +11,15 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
-    "gulp-sass": "^4.1.0"
+    "gulp-sass": "^4.1.0",
+    "immutable": "^4.0.0-rc.12"
   },
   "dependencies": {
     "pug": "^3.0.0"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%",
+    "IE 10"
+  ]
 }

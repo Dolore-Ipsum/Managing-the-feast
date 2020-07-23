@@ -1,10 +1,21 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
+
+exports.default = () => (
+    gulp.src('css/*.css')
+        .pipe(autoprefixer({
+            cascade: false
+        }))
+        .pipe(gulp.dest('./css'))
+);
+        
 
 function style () {
     return gulp.src('./sass/**/*.sass') 
     .pipe(sass())
+    .pipe(autoprefixer())
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream())
 }
