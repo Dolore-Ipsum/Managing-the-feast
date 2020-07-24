@@ -60,16 +60,14 @@ body
 
 .container
     position: relative
-    overflow: hidden
+    //overflow: hidden
     display: grid
-    grid-template-columns: 2fr 6fr 3fr
+    grid-template-columns: 2fr 5fr 3fr
     
 
 .header
     //grid-template-areas: "header-logo header-nav header-contacts" ". header-text ." 
     grid-template-rows: 2fr 10fr
-    grid-column-gap: 15px 
-    grid-row-gap: 15px
     min-height: 1150px
     align-items: center
     background-color: $header-bg
@@ -106,6 +104,7 @@ body
         grid-column-gap: 30px 
         grid-column: 2/3
         grid-row: 1/2
+        white-space: nowrap
                        
         &__link
             text-decoration: none
@@ -199,26 +198,41 @@ body
     &-title
         grid-column: 2/3
         grid-row: 1/2
+        font-size: 55px
     &-description
         grid-column: 2/3
         grid-row: 2/3
+        color: #666666
+        font-size: 22px
+        line-height: 1.6
+        font-weight: 300
 .about
     &-row
-        display: grid
         grid-column: 2/3
         grid-row: 3/4
-        grid-template-columns: repeat(4, auto)
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(25%, max-content))
+        justify-content: space-between
     &-col
         display: grid
-        grid-template-rows: 350px
+        padding: 25% 0
+        grid-template-rows: 250px
         grid-auto-rows: auto
         align-items: end   
-        justify-items: center 
+        justify-items: center
+    &__img
+        height: 250px
+        width: 250px
+    &__img1
+        height: 200px    
     &__title
         color: #ff591f 
         font-size: 90px
         margin: 0  
-        margin-top: -40px    
+        margin-top: -60px   
+    &__text
+        align-self: start
+
 @import media   
         
       
