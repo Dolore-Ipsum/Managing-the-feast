@@ -15,7 +15,7 @@
     "immutable": "^4.0.0-rc.12"
   },
   "dependencies": {
-    "pug": "^3.0.0"
+    "pug": "^3.0.1"
   },
   "browserslist": [
     "last 1 version",
